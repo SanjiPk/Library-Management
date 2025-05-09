@@ -25,7 +25,7 @@ public class Member {
 
     public Transaction getLastTransaction() {
         // TODO
-        return null;
+        return transactions.element();
     }
 
     @Override
