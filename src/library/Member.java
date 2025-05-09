@@ -12,6 +12,7 @@ public class Member {
         this.memberId = memberId;
         this.name = name;
         // TODO: Initialize your data structure here
+        transactions = new CustomStack<>();
     }
 
     public String getMemberId() { return memberId; }
@@ -19,6 +20,7 @@ public class Member {
 
     public void addTransaction(Transaction transaction) {
         // TODO
+        transactions.add(transaction);
     }
 
     public Transaction getLastTransaction() {
