@@ -1,9 +1,12 @@
 package library;
 
+import datastructures.stacks.CustomStack;
+
 public class Member {
     private String memberId;
     private String name;
     // TODO: Define a data structure to hold transactions of each member
+    CustomStack<Transaction> transactions;
 
     public Member(String memberId, String name) {
         this.memberId = memberId;
