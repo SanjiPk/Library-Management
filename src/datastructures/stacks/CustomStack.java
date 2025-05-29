@@ -50,7 +50,8 @@ public class CustomStack<T> implements Queue<T> {
     public T element() {
         T result = list.getLast();
         if (result == null) {
-            throw new NoSuchElementException();
+            // throw new NoSuchElementException();
+            return null;
         }
         return result;
     }

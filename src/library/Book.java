@@ -3,9 +3,9 @@ package library;
 import datastructures.queues.CustomQueue;
 
 public class Book {
-    private String title;
-    private String author;
-    private String isbn;
+    private final String title;
+    private final String author;
+    private final String isbn;
     private boolean isAvailable;
 
     // TODO: Define a data structure to hold members waiting for this book

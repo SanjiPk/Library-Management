@@ -3,11 +3,11 @@ package library;
 import java.util.Date;
 
 public class Transaction {
-    private String transactionId;
-    private String bookTitle;
-    private String memberName;
-    private Date transactionDate;
-    private String type; // "BORROW" or "RETURN"
+    private final String transactionId;
+    private final String bookTitle;
+    private final String memberName;
+    private final Date transactionDate;
+    private final String type; // "BORROW" or "RETURN"
 
     public Transaction(String transactionId, String bookName, String memberName, String type) {
         this.transactionId = transactionId;

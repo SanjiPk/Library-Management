@@ -3,8 +3,8 @@ package library;
 import datastructures.stacks.CustomStack;
 
 public class Member {
-    private String memberId;
-    private String name;
+    private final String memberId;
+    private final String name;
     // TODO: Define a data structure to hold transactions of each member
     CustomStack<Transaction> transactions;
 
