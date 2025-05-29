@@ -6,7 +6,7 @@ import datastructures.lists.CustomLinkedList;
 import java.util.NoSuchElementException;
 
 public class CustomQueue<T> implements Queue<T> {
-    private CustomLinkedList<T> list;
+    private final CustomLinkedList<T> list;
 
     public CustomQueue() {
         list = new CustomLinkedList<>();
@@ -34,11 +34,7 @@ public class CustomQueue<T> implements Queue<T> {
 
     @Override
     public T remove() {
-        T result = list.removeFirst();
-        if (result == null) {
-            throw new NoSuchElementException();
-        }
-        return result;
+        return list.removeFirst();
     }
 
     @Override
